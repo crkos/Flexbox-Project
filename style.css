@@ -1,85 +1,152 @@
-/*Inherit root element fonts for rem units */
 html {
-    font-size: 16px;
-    
-    margin: 0;
-    padding: 0;
-}
-
-/*Header and Navbar at the top of the webpage fixed z-indexed */
-
-body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-header {
-  position: fixed;
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
   width: 100%;
-  border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  z-index: 5;
-  height: 5.1rem;
-  
-  
-  }
-  
-  header .content {
+  padding-left: 30px;
+  padding-right: 10px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.875rem;
-  text-decoration: none;
+}
 
-  }
-  
-  header .logo {
-  flex: 1;
-  margin-left: 1.85rem;
-  text-decoration: none;
-  font-family: Roboto;
-  }
-  
-  header nav ul {
-  display: flex;
-  text-decoration: none;
-  
-  }
-  
-  nav li {
-  padding-left: 3.5rem;
-    
-  }
+.logo {
+  display: inline-block;
+}
 
-  nav li:hover {
-    text-decoration: underline;
-    color: #4a4a4a;
-  }
-  
-  nav a {
-  vertical-align: bottom;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #4a4a4a;
-  font-family: "Roboto";
-  text-decoration: none;
-  }
-
-  ol, ul {
+.nav-links {
   list-style: none;
-  }
+  display: flex;
+}
 
-  /*Main section - Banner*/
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
 
-.banner-area {
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+.logo img {
+  width: 100%;
+  vertical-align: middle;
+  height: 100px;
+
+}
+
+.presentation-banner {
+  position: relative;
+  top: 171px;
+  left: 10%;
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+  align-content: center;
+}
+
+.button {
+  border: solid 2px #4a4a4a;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+  font-family: Roboto;
+  text-align: center;
+  margin-top: 2rem;
+  width: 85%;
+  
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: red;
+}
+
+.banner-content {
+  width: 25.625rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+
+
+#seccion-principal-banner {
+  
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
   background-image: url('./resources/landscape.jpg');
-  background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  position: relative;
-  
+  background-repeat: no-repeat;
+}
 
+.text-portfolio {
+  font-family: Roboto, sans-serif;
+  text-decoration: dashed;
+  text-align: center;
+  margin: 2rem;
+}
+
+.container-portfolio {
+  display: flex;
+  min-height: 300px;
+  margin: auto;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio span {
+  padding: 5px;
+  min-width: 240px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.portfolio img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 10px;
+  height: 200px
+}
+
+.parent-portfolio {
+  min-height: 500px;
+  margin: auto;
+  padding-top: 70px;
 }
