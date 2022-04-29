@@ -122,12 +122,15 @@ nav {
   margin: auto;
   padding-top: 10px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  
 }
 
 .portfolio {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  
 }
 
 .portfolio span {
@@ -135,6 +138,7 @@ nav {
   min-width: 240px;
   font-weight: bold;
   text-align: center;
+  font-size: 14px;
 }
 
 .portfolio img {
@@ -149,4 +153,5 @@ nav {
   min-height: 500px;
   margin: auto;
   padding-top: 70px;
+  
 }
